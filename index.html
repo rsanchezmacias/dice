@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;500;700;900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Die or Die</title>
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <header class="header">
+            <h1 class="header__title">I think there is a button down there...</h1>
+        </header>
+
+        <div class="main-container">
+            <main class="main">
+                <div class="main__content">
+                    <section class="die-section">
+                        <article class="die">
+                            <p class="die__title">Player 1</p>
+                            <img class="die__img" src="static/images/wh-die-six.svg" alt="Die image" />
+                        </article>
+                        <article class="die">
+                            <p class="die__title">Player 2</p>
+                            <img class="die__img" src="static/images/wh-die-six.svg" alt="Die image" />
+                        </article>
+                    </section>
+                    <button class="die__button die__button--enabled" onclick="rollDice()">Roll them like a burrito &#127791</button>
+                </div>
+            </main>
+        </div>
+        <div class="footer-container">
+            <footer class="footer">
+                <section class="footer__content">
+                    <p class="footer__author">Developed by Ricardo Sanchez</p>
+                    <p class="footer__credits"><a class="footer__credit-link"
+                            href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">Part of <span class="footer__credits-course">The
+                            Complete 2022
+                            Web Development Bootcamp</span></a></p>
+                </section>
+            </footer>
+        </div>
+    </div>
+
+    <script src="static/scripts/index.js" charset="utf-8"></script>
+</body>
+
+</html>
