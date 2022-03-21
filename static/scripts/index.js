@@ -24,13 +24,13 @@ function getValueFromImage(image) {
 function getDistinctRandomDieImage(currentImage) {
     let currentValue = getValueFromImage(currentImage);
     let index = Math.floor(Math.random() * dice.length);
-    
-    while(currentValue === index) {
+
+    while (currentValue === index) {
         index = Math.floor(Math.random() * dice.length);
     }
 
     return dice[index];
-}   
+}
 
 function swapDice() {
     let diceElements = document.querySelectorAll(".die__img");
@@ -42,7 +42,6 @@ function swapDice() {
         imageElement.setAttribute("src", newRandomImage)
     }
 }
-
 
 function completeRound() {
     let diceElements = document.querySelectorAll(".die__img");
@@ -63,7 +62,6 @@ function completeRound() {
     }
 }
 
-
 function disableButton() {
     let button = document.querySelector(".die__button");
     button.disabled = true;
@@ -78,7 +76,6 @@ function enableButton() {
     button.classList.remove("die__button--disabled");
 }
 
-
 function rollDice() {
     disableButton();
 
@@ -92,7 +89,7 @@ function rollDice() {
 
         clearInterval(currentTimer);
         currentTimer = setInterval(swapImageAndSetNewInterval, timeInterval);
-        
+
         counter--;
         if (counter === 0) {
             clearInterval(currentTimer);
